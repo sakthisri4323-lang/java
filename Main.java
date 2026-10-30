@@ -1,21 +1,9 @@
-
-class MyException extends Exception {
-    MyException(String msg) {
-        super(msg);
-    }
+import java.util.*;
+public class Anagrams {
+public static void main(String[] args) {
+int arr[]={5,4,2,1,10,15};
+char a[]={'h','b','d','a','c'};
+Arrays.sort(arr);
+System.out.println(Arrays.toString(arr));
 }
-
-public class MAIN {
-    public static void main(String[] args) {
-        int age = 16;
-
-        try {
-            if (age < 18) {
-                throw new MyException("Age must be 18 or above");
-            }
-            System.out.println("Eligible to vote");
-        } catch (MyException e) {
-            System.out.println("Exception: " + e.getMessage());
-        }
-    }
 }
